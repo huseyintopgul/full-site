@@ -1,0 +1,87 @@
+#kapsayici {
+    max-width: 640px;
+    margin: auto;
+    position: relative;
+}
+
+.resim {
+    width: 100%;
+    display: none;
+}
+
+#kapsayici .resim img {
+    width: 100%;
+    height: 800px;
+    position: sticky;
+}
+
+#kapsayici .ileri,
+.geri {
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(191, 195, 199);
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: .6;
+    top: 50%;
+    transform: translateY(-50);
+    border-radius: 50%;
+}
+
+#kapsayici .ileri {
+    right: 10px;
+}
+
+#kapsayici .geri {
+    left: 10px;
+}
+
+.aktif {
+    display: block;
+    animation: fade 1s ease-in;
+}
+
+@keyframes scale{
+    0%{
+        scale: .5;
+    }
+    50%{
+        scale: 1.4;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: .3;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+#kapsayici .altNokta {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+#kapsayici .altNokta li {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin: 8.5px;
+}
+
+#kapsayici .altNokta li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.aktifKucukResim {
+    animation: scale 1.5s ease-in;
+    scale: 1.4;
+}

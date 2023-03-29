@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="kapsayici" onMouseOver="durdur()" onMouseOut="devam()" >
+        <div class="resim"><img src="./images/1-.jpg" alt=""></div>
+        <div class="resim"><img src="./images/2-.jpg" alt=""></div>
+        <div class="resim"><img src="./images/3-.jpg" alt=""></div>
+        <div class="resim"><img src="./images/4-.jpg" alt=""></div>
+        <div class="resim"><img src="./images/5-.jpg" alt=""></div>
+        <div class="resim"><img src="./images/6-.jpg" alt=""></div>
+        <div class="resim"><img src="./images/7-.jpg" alt=""></div>
+        <div class="resim"><img src="./images/8-.jpg" alt=""></div>
+        <div class="resim"><img src="./images/9-.jpg" alt=""></div>
+        <div class="ileri" onclick="ileri()"> >> </div>
+        <div class="geri" onclick="geri()"> << </div>
+        <ul class="altNokta">
+            <li><img src="./images/1-.jpg" onclick="dondur(0)" alt=""></li>
+            <li><img src="./images/2-.jpg" onclick="dondur(1)" alt=""></li>
+            <li><img src="./images/3-.jpg" onclick="dondur(2)" alt=""></li>
+            <li><img src="./images/4-.jpg" onclick="dondur(3)" alt=""></li>
+            <li><img src="./images/5-.jpg" onclick="dondur(4)" alt=""></li>
+            <li><img src="./images/6-.jpg" onclick="dondur(5)" alt=""></li>
+            <li><img src="./images/7-.jpg" onclick="dondur(6)" alt=""></li>
+            <li><img src="./images/8-.jpg" onclick="dondur(7)" alt=""></li>
+            <li><img src="./images/9-.jpg" onclick="dondur(8)" alt=""></li>
+        </ul>
+        </div>
+
+
+        <script src="./app.js"></script>
+</body>
+
+</html>
